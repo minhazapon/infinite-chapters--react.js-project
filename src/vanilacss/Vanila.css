@@ -12,4 +12,31 @@
 
 
 }
+.banner-text-1{
+
+   font-size: 70px;
+   font-weight: bold;
+   color: black;
+   line-height: 80px;
+
+
+}
+.banner-flex{
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+  
+
+}
+.banner-mother{
+ 
+
+  background-color: rgba(0, 172, 172, 0.096);  
+  border-radius: 10px;
+
+     
+}
+
   
