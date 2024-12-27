@@ -9,6 +9,7 @@ import {
 import Root from './Root';
 import Home from './Home';
 import './vanilacss/Vanila.css'
+import Pages from './Page file/Pages';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>  ,
+      },
+      {
+        path: "/listed",
+        element: <Home></Home>  ,
+      },
+      {
+        path: "/pages",
+        element: <Pages></Pages>  ,
       },
     ],
   },

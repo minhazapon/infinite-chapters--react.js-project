@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const Root = () => {
     return (
-        <div className=" ml-20 mr-20 ">
+        <div className=" ">
 
             <Nav></Nav>
             <Outlet></Outlet>

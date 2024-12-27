@@ -1,0 +1,15 @@
+.book{
+    font-family: "Goudy Bookletter 1911", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-logo{
+
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+
+}
+  
