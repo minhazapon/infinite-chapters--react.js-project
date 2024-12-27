@@ -10,6 +10,7 @@ import Root from './Root';
 import Home from './Home';
 import './vanilacss/Vanila.css'
 import Pages from './Page file/Pages';
+import ListedBooks from './listed books/ListedBooks';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/listed",
-        element: <Home></Home>  ,
+        element: <ListedBooks></ListedBooks>   ,
       },
       {
         path: "/pages",
