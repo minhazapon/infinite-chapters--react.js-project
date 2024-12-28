@@ -13,6 +13,8 @@ import Pages from './Page file/Pages';
 import ListedBooks from './listed books/ListedBooks';
 import App from './home file/Calculator';
 import Calculator from './home file/Calculator';
+import Books from './home file/Books';
+import PerBookDetails from './home file/PerBookDetails';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,16 @@ const router = createBrowserRouter([
       {
         path: "/calculator",
         element: <Calculator></Calculator>      ,
+      },
+      {
+        path: "/Book",
+        element: <Books></Books> ,
+        // loader: () => fetch('http://localhost:5000/bookData')
+      },
+      {
+        path: "/Book/:id",
+        element: <PerBookDetails></PerBookDetails> ,
+        loader: ({params}) => fetch(`http://localhost:5000/bookData/${params.id}`)
       },
     ],
   },

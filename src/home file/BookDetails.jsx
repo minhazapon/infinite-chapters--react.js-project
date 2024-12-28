@@ -8,7 +8,7 @@ const BookDetails = ({book}) => {
 
     return (
         <div className=" book-details-div ">
-        <Link to=''>
+        <Link to={`/book/${_id}`}>
         <div>
         <div>
         <div>

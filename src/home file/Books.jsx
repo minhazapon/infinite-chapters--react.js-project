@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import BookDetails from "./BookDetails";
+import { useLoaderData } from "react-router-dom";
 
 
 
@@ -19,6 +20,8 @@ const Books = () => {
         
     } , [])
 
+    // const bData = useLoaderData();
+
 
 
 
@@ -26,31 +29,15 @@ const Books = () => {
         <div className=" book-div  ">
 
             <div>
-
             <div className=" book-flex ">
-                <p className=" book book-text ">Book</p>
-                <img className=" book-img " src="https://cdn-icons-gif.flaticon.com/12035/12035096.gif"  alt="" />
+            <p className=" book book-text ">Book</p>
+            <img className=" book-img " src="https://cdn-icons-gif.flaticon.com/12035/12035096.gif"  alt="" />
             </div>
-
-
-
             <div className=" book-data-div ">
-
-                <div className=" book-grid-div ">
-
-                   {
-
-                      book.map( book => <BookDetails book={book}></BookDetails> )
-
-                   }
-
-                </div>
-
+            <div className=" book-grid-div ">
+            {book.map( book => <BookDetails book={book}></BookDetails> )}
             </div>
-
-
-
-
+            </div>
             </div>
             
         </div>
