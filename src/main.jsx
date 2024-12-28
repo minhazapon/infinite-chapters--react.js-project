@@ -11,6 +11,8 @@ import Home from './Home';
 import './vanilacss/Vanila.css'
 import Pages from './Page file/Pages';
 import ListedBooks from './listed books/ListedBooks';
+import App from './home file/Calculator';
+import Calculator from './home file/Calculator';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/pages",
         element: <Pages></Pages>  ,
+      },
+      {
+        path: "/calculator",
+        element: <Calculator></Calculator>      ,
       },
     ],
   },
