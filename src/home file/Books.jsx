@@ -13,7 +13,7 @@ const Books = () => {
 
     useEffect( () => {
 
-      fetch('http://localhost:5000/bookData')
+      fetch('https://infinite-server-express-js.onrender.com/bookData')
       .then( res => res.json())
       .then( data => setBook(data) )
 

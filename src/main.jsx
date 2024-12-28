@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: "/Book/:id",
         element: <PerBookDetails></PerBookDetails> ,
-        loader: ({params}) => fetch(`http://localhost:5000/bookData/${params.id}`)
+        loader: ({params}) => fetch(`https://infinite-server-express-js.onrender.com/bookData/${params.id}`)
       },
     ],
   },

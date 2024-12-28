@@ -11,7 +11,7 @@ const WishlistRead = () => {
 
     useEffect( () =>{
 
-    fetch('http://localhost:5000/wishlistData')
+    fetch('https://infinite-server-express-js.onrender.com/wishlistData')
     .then( res => res.json())
     .then( data => setWR(data) )
 

@@ -19,7 +19,7 @@ const WishlistAdd = () => {
       const allItems = { image, name, writer, version, design }
       console.log(allItems)
       
-      fetch('http://localhost:5000/wishlistData', {
+      fetch('https://infinite-server-express-js.onrender.com/wishlistData', {
 
         method:'POST',
         headers:{

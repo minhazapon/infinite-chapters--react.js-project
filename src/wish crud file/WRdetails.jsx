@@ -25,7 +25,7 @@ const WRdetails = ({WR}) => {
         }).then((result) => {
           if (result.isConfirmed) {
          
-          fetch(`http://localhost:5000/wishlistData/${_id}`,{
+          fetch(`https://infinite-server-express-js.onrender.com/wishlistData/${_id}`,{
 
               method: 'DELETE',
 
