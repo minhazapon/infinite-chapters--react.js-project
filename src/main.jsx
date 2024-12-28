@@ -14,6 +14,7 @@ import ListedBooks from './listed books/ListedBooks';
 import Calculator from './home file/Calculator';
 import Books from './home file/Books';
 import PerBookDetails from './home file/PerBookDetails';
+import WishlistAdd from './wish crud file/WishlistAdd';
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/calculator",
         element: <Calculator></Calculator>      ,
+      },
+      {
+        path: "/addForm",
+        element: <WishlistAdd></WishlistAdd>   ,
       },
       {
         path: "/Book",

@@ -2,6 +2,7 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ReadBook from './ReadBook';
+import WishlistRead from '../wish crud file/WishlistRead';
 
 const ListTabs = () => {
 
@@ -18,7 +19,7 @@ const ListTabs = () => {
         <ReadBook></ReadBook>
         </TabPanel>
         <TabPanel>
-        <h2>Any content 2</h2>
+        <WishlistRead></WishlistRead>
         </TabPanel>
         </Tabs>
         </div>

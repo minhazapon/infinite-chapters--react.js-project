@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 
 
@@ -36,7 +36,9 @@ const PerBookDetails = () => {
         </div>
         </div>
         <div>
+        <Link to='/addForm'>
         <button className=" mt-5 bg-cyan-600 text-white book btn ">Add in favorite list</button>
+        </Link>    
         </div>
         </div>
         </div>
