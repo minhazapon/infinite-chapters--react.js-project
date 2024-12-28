@@ -15,6 +15,7 @@ import App from './home file/Calculator';
 import Calculator from './home file/Calculator';
 import Books from './home file/Books';
 import PerBookDetails from './home file/PerBookDetails';
+import SearchSystem from './Page file/Search';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/calculator",
         element: <Calculator></Calculator>      ,
+      },
+      {
+        path: "/search",
+        element:  <SearchSystem></SearchSystem>  ,
       },
       {
         path: "/Book",
