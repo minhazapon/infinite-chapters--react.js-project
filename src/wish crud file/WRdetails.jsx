@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 
 
 
@@ -5,7 +6,49 @@
 const WRdetails = ({WR}) => {
     
    
-    const {image, name, writer, version, design} = WR
+    const {_id, image, name, writer, version, design} = WR
+
+
+    
+    const handleDelete = delete_id =>{
+          
+      console.log(_id)
+
+      Swal.fire({
+          title: "Are you sure?",
+          text: "You won't be able to revert this!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+          if (result.isConfirmed) {
+         
+          fetch(`http://localhost:5000/wishlistData/${_id}`,{
+
+              method: 'DELETE',
+
+          })
+          .then( res => res.json())
+          .then( data => {
+             
+         console.log(data)
+         if(data.deletedCount > 0){
+         Swal.fire({
+         title: "Deleted!",
+         text: "Your file has been deleted.",
+         icon: "success"
+         });
+
+         }})}
+        });
+
+
+
+
+     }
+
    
 
     return (
@@ -26,6 +69,8 @@ const WRdetails = ({WR}) => {
             <p className=" book " >Design: {design} </p>
             <div className="card-actions">
               <button className="btn  bg-cyan-600 book text-white ">Buy Now</button>
+              <button onClick={ ()=> handleDelete(WR._id) } className="btn  bg-cyan-600 book text-white ">Delete</button>
+              <button className="btn  bg-cyan-600 book text-white ">Update</button>
             </div>
           </div>
         </div>
