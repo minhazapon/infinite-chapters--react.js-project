@@ -144,5 +144,22 @@
   margin-right: 80px;
 
 }
+.per-flex{
+
+  display: flex;
+  justify-content: center;
+
+}
+.per-bg{
+
+  background-color: black;
+
+}
+.IC-text{
+
+  margin-bottom: 20px;
+  font-size: 20px;
+
+}
 
   
