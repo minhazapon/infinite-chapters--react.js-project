@@ -1,6 +1,7 @@
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import ReadBook from './ReadBook';
 
 const ListTabs = () => {
 
@@ -14,7 +15,7 @@ const ListTabs = () => {
         <Tab><p className=' book '>Wishlist</p></Tab>
         </TabList>
         <TabPanel>
-        <h2>Any content 1</h2>
+        <ReadBook></ReadBook>
         </TabPanel>
         <TabPanel>
         <h2>Any content 2</h2>
