@@ -11,7 +11,7 @@ const ReadBook = () => {
 
     useEffect( () =>{
     
-      fetch('hhttps://infinite-server-express-js.onrender.com/bookData')
+      fetch('https://infinite-server-express-js.onrender.com/bookData')
       .then( res => res.json())
       .then( data => setRead(data) )
     } , [])
