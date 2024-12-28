@@ -167,5 +167,16 @@
    margin-bottom: 40px;
 
 }
+.chart-div{
+
+   margin-top: 80px;
+   margin-bottom: 80px;
+   margin-left: 80px;
+   margin-right: 80px;
+   display: flex;
+   justify-content: center;
+
+
+}
 
   
